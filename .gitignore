@@ -1,0 +1,13 @@
+venv
+idna*
+certifi*
+chardet*
+gspread*
+httplib2*
+oauth2client*
+pyasn1*
+requests*
+rsa*
+urllib3*
+six-1.14.0.dist-info
+six.py
