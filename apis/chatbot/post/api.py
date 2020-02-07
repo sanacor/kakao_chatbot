@@ -1,11 +1,8 @@
-from chatbot.sample_chatbot.intent import Matcher
+from chatbot.cashier_chatbot.intent import Matcher
 import json
 
 
 def execute(data):
-    # print(data)
-    print('type of data')
-    print(type(data))
     data = json.loads(data)
     intent = data['intent']['name']
     print('Intent: '+ intent)

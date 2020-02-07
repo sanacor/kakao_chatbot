@@ -1,4 +1,4 @@
-service: aws-python-simple-http-endpoint
+service: lmd-an2-op-chatbot
 
 frameworkVersion: ">=1.2.0 <2.0.0"
 
@@ -12,8 +12,8 @@ package:
     - venv/**
 
 functions:
-  currentTime:
-    handler: handler.endpoint
+  kakao:
+    handler: router.endpoint
     events:
       - http:
           path: chatbot

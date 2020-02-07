@@ -1,4 +1,4 @@
-from chatbot.sample_chatbot.google_spreadsheet import GoogleSpreadSheet
+from chatbot.cashier_chatbot.google_spreadsheet import GoogleSpreadSheet
 
 gss = GoogleSpreadSheet()
 
