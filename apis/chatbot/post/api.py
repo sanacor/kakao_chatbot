@@ -7,21 +7,21 @@ def execute(data):
     intent = data['intent']['name']
     print('Intent: '+ intent)
     matcher = Matcher(intent)
-    resp = matcher.execute()
+    response = matcher.execute()
 
-    res = {
-        'version': "2.0",
-        'template': {
-            'outputs': [
-                {
-                    'simpleText': {
-                        'text': resp
-                    }
-                }
-            ]
-        }
-    }
+    # res = {
+    #     'version': "2.0",
+    #     'template': {
+    #         'outputs': [
+    #             {
+    #                 'simpleText': {
+    #                     'text': resp
+    #                 }
+    #             }
+    #         ]
+    #     }
+    # }
 
-    data = json.dumps(res)
+    data = json.dumps(response)
 
     return data

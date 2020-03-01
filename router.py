@@ -27,7 +27,7 @@ def endpoint(event, context):
         "statusCode": 200,
         "body": product_list
     }
-
+    print(response)
     return response
 
 
