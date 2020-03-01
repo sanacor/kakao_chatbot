@@ -1,0 +1,35 @@
+{
+  "version": "2.0",
+  "template": {
+    "outputs": [
+      {
+        "carousel": {
+          "type": "basicCard",
+          "items": [
+            {
+              "title": "새로운 PS4 게임 가격",
+              "description": "새롭게 출시한 PS4 게임 가격을 알려드려요:)",
+              "thumbnail": {
+                "imageUrl": "https://ibb.co/gPZPwLy"
+              }
+            },
+            {
+              "title": "실시간 중고 PS4 게임",
+              "description": "실시간으로 스토어에서 판매 중인 PS4 중고 게임 리스트를 알려드려요:)",
+              "thumbnail": {
+                "imageUrl": "https://ibb.co/gPZPwLy"
+              }
+            },
+            {
+              "title": "중고 PS4 게임 가격",
+              "description": "실시간으로 스토어에서 판매 중인 PS4 중고 게임 가격을 알려드려요:)",
+              "thumbnail": {
+                "imageUrl": "https://ibb.co/gPZPwLy"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
