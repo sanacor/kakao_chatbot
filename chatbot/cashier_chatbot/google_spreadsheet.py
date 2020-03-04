@@ -14,17 +14,32 @@ class GoogleSpreadSheet:
         self.gc = gspread.authorize(self.credentials)
 
     def get_items(self):
-        items = self.get_column_from(1)
+        items = self._get_column_from(1)
         str = ' '.join(items)
-        return str
+        response = self._get_response_format(str)
+        return response
 
-    def get_column_from(self, val):
+    def _get_column_from(self, val):
         doc = self.gc.open_by_url(self.spreadsheet_url)
 
         worksheet = doc.worksheet('시트1')
         column_data = worksheet.col_values(val)
         return column_data
 
+    def _get_response_format(self, content):
+        result = {
+            'version': "2.0",
+            'template': {
+                'outputs': [
+                    {
+                        'simpleText': {
+                            'text': content
+                        }
+                    }
+                ]
+            }
+        }
+        return result
 
 if __name__ == "__main__":
     gss = GoogleSpreadSheet()
