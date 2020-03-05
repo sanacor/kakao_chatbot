@@ -39,7 +39,11 @@ class Matcher:
                 print('No matching intent'+self.intent)
                 return
             action = intent_to_action[self.intent]
+            fallback_response = fallback.default_response()
+            quick_replies = fallback_response['template']['quickReplies']
             print('Before action')
-            return action()
+            result_response = action()
+            result_response['template'].update({'quickReplies': quick_replies})
+            return result_response
         except KeyError:
             return 'Sorry I cant :('
