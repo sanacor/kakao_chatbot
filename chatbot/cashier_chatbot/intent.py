@@ -13,10 +13,10 @@ class Intent:
 
 
 intent_to_action = {
-    Intent.NEW_PS4_GAME_LIST: gss.get_items,
-    Intent.USED_PS4_GAME_LIST: gss.get_items,
-    Intent.PRICE_OF_NEW_PS4_GAME: gss.get_items,
-    Intent.PRICE_OF_USED_PS4_GAME: gss.get_items,
+    Intent.NEW_PS4_GAME_LIST: gss.get_used_title,
+    Intent.USED_PS4_GAME_LIST: gss.get_used_title,
+    Intent.PRICE_OF_NEW_PS4_GAME: gss.get_used_title,
+    Intent.PRICE_OF_USED_PS4_GAME: gss.get_used_title,
     Intent.FALL_BACK: fallback.default_response
 }
 

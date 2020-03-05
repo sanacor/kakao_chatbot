@@ -32,13 +32,8 @@
       }
     ],
     "quickReplies": [
-      {
-        "messageText": "중고 PS4 게임 리스트 알려줘",
-        "action": "message",
-        "label": "가격 문의"
-      },
         {
-        "messageText": "중고 PS4 게임 리스트 알려줘",
+        "messageText": "신규 PS4 게임 리스트 알려줘",
         "action": "message",
         "label": "신규 PS4 게임 리스트"
       },
@@ -50,12 +45,12 @@
       {
         "messageText": "중고 PS4 게임 리스트 알려줘",
         "action": "message",
-        "label": "신규 PS4 게임 가격 문의"
+        "label": "신규 PS4 게임 가격"
       },
       {
         "messageText": "중고 PS4 게임 리스트 알려줘",
         "action": "message",
-        "label": "중고 PS4 게임 가격 문의"
+        "label": "중고 PS4 게임 가격"
       }
     ]
   }

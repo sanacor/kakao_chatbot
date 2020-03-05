@@ -11,3 +11,6 @@ rsa*
 urllib3*
 six-1.14.0.dist-info
 six.py
+
+
+*.pyc
