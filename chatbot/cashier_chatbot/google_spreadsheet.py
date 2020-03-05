@@ -60,6 +60,11 @@ class GoogleSpreadSheet:
                 'outputs': [
                     {
                         'simpleText': {
+                            'text': '분리된 메시지 테스트'
+                        }
+                    },
+                    {
+                        'simpleText': {
                             'text': content
                         }
                     }
