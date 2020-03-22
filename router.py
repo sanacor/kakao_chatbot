@@ -21,11 +21,11 @@ def endpoint(event, context):
     path, method, body = get_http_components(event)
 
     chatbot = ROUTER[path][method]
-    product_list = chatbot.execute(body)
+    chat_repsponse = chatbot.execute(body)
 
     response = {
         "statusCode": 200,
-        "body": product_list
+        "body": chat_repsponse
     }
     print(response)
     return response
