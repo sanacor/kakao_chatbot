@@ -10,14 +10,14 @@
               "title": "새로운 PS4 게임 가격",
               "description": "새롭게 출시한 PS4 게임 가격을 알려드려요:)",
               "thumbnail": {
-                "imageUrl": "https://i.ibb.co/GtQtk47/flow.jpg"
+                "imageUrl": "https://i.ibb.co/MnvHCZ2/2020-ps4-games.png"
               }
             },
             {
-              "title": "실시간 중고 PS4 게임",
+              "title": "실시간 중고 PS4 게임 리스트",
               "description": "실시간으로 스토어에서 판매 중인 PS4 중고 게임 리스트를 알려드려요:)",
               "thumbnail": {
-                "imageUrl": "https://i.ibb.co/GtQtk47/flow.jpg"
+                "imageUrl": "https://i.ibb.co/LxGwH9m/ps4-games-collection.jpg"
               }
             },
             {
@@ -32,21 +32,22 @@
       }
     ],
     "quickReplies": [
-        {
+      {
         "messageText": "신규 PS4 게임 리스트 알려줘",
         "action": "message",
         "label": "신규 PS4 게임 리스트"
+      },
+      {
+        "messageText": "신규 PS4 게임 리스트 알려줘",
+        "action": "message",
+        "label": "신규 PS4 게임 가격"
       },
       {
         "messageText": "중고 PS4 게임 리스트 알려줘",
         "action": "message",
         "label": "중고 PS4 게임 리스트"
       },
-      {
-        "messageText": "중고 PS4 게임 리스트 알려줘",
-        "action": "message",
-        "label": "신규 PS4 게임 가격"
-      },
+
       {
         "messageText": "중고 PS4 게임 리스트 알려줘",
         "action": "message",
