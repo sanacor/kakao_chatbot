@@ -9,8 +9,10 @@ pyasn1*
 requests*
 rsa*
 urllib3*
+emoji*
 six-1.14.0.dist-info
 six.py
 
+./sketch.py
 
 *.pyc
