@@ -9,7 +9,7 @@ class GoogleSpreadSheet:
         self.scope = [
             'https://spreadsheets.google.com/feeds'
         ]
-        self.base_path = './chatbot/cashier_chatbot/'
+        self.base_path = './kakao_chatbot/'
         # self.base_path = './'
         self.json_file_name = 'vast-ethos-251302-b8a92651b359.json'
         self.spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1cln_wC0rRZfo1kfR1-6SYV-duJA4h4mTU3KIvQ0z38M/edit#gid=0'
@@ -129,6 +129,7 @@ class GoogleSpreadSheet:
         return result
 
     def _get_new_release_game_list_response_format(self, content):
+        # emoji.emojize(":grinning_squinting_face:") +
         result = {
             'version': "2.0",
             'template': {
@@ -136,8 +137,8 @@ class GoogleSpreadSheet:
                     {
                         'simpleText': {
                             'text': emoji.emojize(
-                                ":video_game:") + 'PS4 신규 발매 게임이에요\n' + '"신규 {번호}번\" 를 입력하시면 \n가격을 알려드려요' + emoji.emojize(
-                                ":grinning_squinting_face:") + '\n\n' + '예시) 신규 3번'
+                                ":video_game:") + 'PS4 신규 발매 게임이에요\n' + '"신규 {번호}번\" 를 입력하시면 \n가격을 알려드려요' + '\n\n' + '예시) 신규 3번'
+
                         }
                     },
                     {
@@ -188,8 +189,8 @@ class GoogleSpreadSheet:
 
 if __name__ == "__main__":
     request = {
-  "resource": "/chatbot",
-  "path": "/chatbot",
+  "resource": "/kakao_chatbot",
+  "path": "/kakao_chatbot",
   "httpMethod": "POST",
   "headers": {
     "Accept": "*/*",
@@ -273,11 +274,11 @@ if __name__ == "__main__":
   "stageVariables": None,
   "requestContext": {
     "resourceId": "ftvrqj",
-    "resourcePath": "/chatbot",
+    "resourcePath": "/kakao_chatbot",
     "httpMethod": "POST",
     "extendedRequestId": "I-RRzFPtoE0Fm5w=",
     "requestTime": "06/Mar/2020:14:47:13 +0000",
-    "path": "/dev/chatbot",
+    "path": "/dev/kakao_chatbot",
     "accountId": "113154357195",
     "protocol": "HTTP/1.1",
     "stage": "dev",
