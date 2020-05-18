@@ -1,9 +1,4 @@
-import json
-import datetime
-import json
 from apis.chatbot.post import api as chatbot
-from chatbot.cashier_chatbot.intent import Matcher
-
 
 ROUTER = {
     '/chatbot': {

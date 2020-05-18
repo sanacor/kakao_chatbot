@@ -1,6 +1,6 @@
-from chatbot.cashier_chatbot.google_spreadsheet import GoogleSpreadSheet
-from chatbot.cashier_chatbot.fallback_block.fallback import Fallback
-from chatbot.cashier_chatbot.welcome_block.welcome import Welcome
+from kakao_chatbot.google_spreadsheet import GoogleSpreadSheet
+from kakao_chatbot.fallback_block.fallback import Fallback
+from kakao_chatbot.welcome_block.welcome import Welcome
 
 gss = GoogleSpreadSheet()
 fallback = Fallback()
@@ -38,7 +38,7 @@ intent_to_action = {
 # }
 
 
-class Matcher:
+class IntentAdapter:
 
     def __init__(self, intent, request):
         self.intent = intent

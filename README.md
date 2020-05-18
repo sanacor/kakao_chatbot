@@ -1,6 +1,6 @@
 <!--
 title: 'AWS Simple HTTP Endpoint example in Python'
-description: 'This example demonstrates how to setup a simple HTTP post endpoint. Once you chatbot it, it will reply with the current time.'
+description: 'This example demonstrates how to setup a simple HTTP post endpoint. Once you kakao_chatbot it, it will reply with the current time.'
 layout: Doc
 framework: v1
 platform: AWS

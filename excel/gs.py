@@ -26,14 +26,19 @@ class GoogleSpreadSheet:
 
         sh = self.client.open_by_url(self.spreadsheet_url)
         print(time.time())
-        df = pandas.read_excel(excel_file)
+
+        #엑셀 읽기
+        df = pandas.read_excel(excel_file, encoding=)
         print(time.time())
 
+        # 엑셀 --> csv
         df.to_csv(r'./name.csv', index=None, header=True, encoding='UTF-8')
         print(time.time())
 
         content = open('./name.csv', 'r').read()
         print(time.time())
+
+        # csv --> gs
         self.client.import_csv(sh.id, content.encode(encoding='utf-8'))
         print(time.time())
 

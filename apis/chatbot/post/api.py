@@ -1,4 +1,4 @@
-from chatbot.cashier_chatbot.intent import Matcher
+from kakao_chatbot.intent_adapter import IntentAdapter
 import json
 
 
@@ -7,7 +7,7 @@ def execute(data):
     intent = request['intent']['name']
     print('Intent: ' + intent)
 
-    matcher = Matcher(intent, request)
+    matcher = IntentAdapter(intent, request)
     response = matcher.execute()
     data = json.dumps(response)
 
